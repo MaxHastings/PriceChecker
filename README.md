@@ -26,6 +26,7 @@ Use the Price Checker app to add items to your shopping cart list by using your 
 * Code Refactoring.
 * Add Webservice to fetch Jungsoo's Market database from a server.
 * Allow user to search for products by name or code.
+* Add App Icon
 
 ## Using the App
 
