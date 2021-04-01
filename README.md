@@ -42,3 +42,4 @@ Use the Price Checker app to add items to your shopping cart list by using your 
 
 ## Demo Pictures
 
+<img src="./PriceChecker.png" alt="Shopping List" width="250"/>
