@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Price Checker</string>
+    <string name="action_settings">Settings</string>
+    <string name="remove_item">Are you sure you want to remove the following item?</string>
+    <string name="remove">Remove</string>
+    <string name="cancel">Cancel</string>
+</resources>
