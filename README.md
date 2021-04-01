@@ -6,8 +6,8 @@ Use the Price Checker app to add items to your shopping cart list by using your 
 
 ## Features
 
-* QR Code scanning to add items
-* Remove items
+* QR Code scanning to add items.
+* Remove items.
 * Shopping cart list is persisted locally.
 
 ## Developer decisions
@@ -20,10 +20,10 @@ Use the Price Checker app to add items to your shopping cart list by using your 
 
 ## Future Improvements
 
-* Add Unit Testing
-* Test app on multiple devices
-* Improve code comments and documentation
-* Code Refactoring
+* Add Unit Testing.
+* Test app on multiple devices.
+* Improve code comments and documentation.
+* Code Refactoring.
 * Add Webservice to fetch Jungsoo's Market database from a server.
 * Allow user to search for products by name or code.
 
