@@ -12,7 +12,7 @@ Use the Price Checker app to add items to your shopping cart list by using your 
 
 ## Developer decisions
 
-* Followed recommended architectural decisions by Google. Seperation of concerns, view models, and repositories.
+* Followed recommended architectural principles by Google. Seperation of concerns, view models, and repositories.
 * Saving Jungsoo’s Market database and the user's shopping list to local database using Room.
 * Using Picasso library to fetch and load product images.
 * Used CameraX and Google's Machine Learning for scanning QR codes which makes it super fast and instant.
