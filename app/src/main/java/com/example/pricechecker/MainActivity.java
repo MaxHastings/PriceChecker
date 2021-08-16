@@ -140,20 +140,17 @@ public class MainActivity extends AppCompatActivity implements ShoppingListAdapt
         if (requestCode == SCAN_QR_REQUEST_CODE) {
             if (resultCode == RESULT_OK) {
                 String productCode = data.getData().toString();
-                model.getProductById(productCode).observe(this, new Observer<ProductItem>() {
-                    @Override
-                    public void onChanged(ProductItem productItem) {
-                        String text;
-                        if (productItem == null) {
-                            text = "Item not found. Try again!";
-                        } else {
-                            text = "Added item to cart!";
-                            CartItem item = new CartItem(productItem.name, productItem.cents, productItem.imageUrl);
-                            model.insert(item);
-                        }
-                        Snackbar.make(findViewById(android.R.id.content), text, Snackbar.LENGTH_LONG)
-                                .setAction("Action", null).show();
+                model.getProductById(productCode).observe(this, productItem -> {
+                    String text;
+                    if (productItem == null) {
+                        text = "Item not found. Try again!";
+                    } else {
+                        text = "Added " + productItem.name + " to cart!";
+                        CartItem item = new CartItem(productItem.name, productItem.cents, productItem.imageUrl);
+                        model.insert(item);
                     }
+                    Snackbar.make(findViewById(android.R.id.content), text, Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
                 });
             }
         }
